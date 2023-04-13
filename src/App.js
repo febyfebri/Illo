@@ -5,7 +5,7 @@ import Mysong from './components/Mysong';
 import Navbar from './components/Navbar';
 import SocialLinks from './components/SocialLinks';
 import Youtube from './components/Youtube';
-import Footer from './components/Footer';
+import Foter from './components/Foter';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <About />
       <Mysong />
       <Youtube />
-      <Footer />
+      <Foter />
     </div>
   );
 }
