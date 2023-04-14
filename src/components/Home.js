@@ -16,10 +16,10 @@ const Home = () => {
                         Untuk proses pembuatan album Promise diproduseri langsung oleh Illo yang sekaligus penulis lirik & lagu dalam album ini.
                     </p>
                     <div>
-                        <button className='group text-white font-Montserrat w-fit px-7 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                        <a href='#about' className='group text-white font-Montserrat w-fit px-7 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                             More
                             <span className='group-hover:rotate-90 duration-300'><MdOutlineKeyboardArrowRight size={25} /></span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div>
