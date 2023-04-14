@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/logo.png';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { HiOutlineXMark } from 'react-icons/hi2';
 
@@ -30,9 +31,9 @@ const Navbar = () => {
     return (
         <div className='flex justify-between items-center text-white px-4 w-full h-20 bg-black'>
             <div>
-                <h1 className=' font-Pacifico text-4xl'>
-                    Illo
-                </h1>
+                <img src={logo} alt='logo'
+                    width={70}
+                />
             </div>
             <ul className='hidden md:flex'>
                 {links.map(({ id, link, href }) => (

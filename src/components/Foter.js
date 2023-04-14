@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 import { FaInstagram, FaEnvelope, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 
 const Foter = () => {
@@ -48,7 +49,7 @@ const Foter = () => {
     return (
         <footer className=" bg-gradient-to-b from-black to-gray-800">
             <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                <span className="text-xl text-white sm:text-center font-Pacifico">Illo</span>
+                <span className="text-xl text-white sm:text-center font-Pacifico"><img src={logo} alt='logo' width={70} /></span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                     {links.map(({ id, child, href }) => (
                         <li key={id} className='flex flex-wrap'>
