@@ -8,18 +8,22 @@ const Navbar = () => {
     const links = [
         {
             id: 1,
+            href: "#home",
             link: 'Home'
         },
         {
             id: 2,
+            href: "#about",
             link: 'About Me'
         },
         {
             id: 3,
+            href: "#song",
             link: 'My Song'
         },
         {
             id: 4,
+            href: "#gallery",
             link: 'Gallery'
         }
     ]
@@ -31,17 +35,17 @@ const Navbar = () => {
                 </h1>
             </div>
             <ul className='hidden md:flex'>
-                {links.map(({ id, link }) => (
+                {links.map(({ id, link, href }) => (
                     <li key={id} className='px-4 cursor-pointer font-Montserrat font-medium text-gray-300 capitalize hover:scale-105 duration-200'>
-                        {link}
+                        <a href={href}>{link}</a>
                     </li>
                 ))}
             </ul>
             {nav && (
                 <ul className='flex flex-col justify-center items-center absolute left-0 top-0 w-full h-screen bg-gradient-to-b from-gray-950 to-black'>
-                    {links.map(({ id, link }) => (
+                    {links.map(({ id, link, href }) => (
                         <li key={id} className='py-6 cursor-pointer font-Montserrat font-medium text-gray-300 capitalize hover:scale-105 duration-200'>
-                            {link}
+                            <a href={href}>{link}</a>
                         </li>
                     ))}
                 </ul>

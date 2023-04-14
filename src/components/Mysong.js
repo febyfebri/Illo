@@ -32,7 +32,7 @@ const Mysong = () => {
     ]
     return (
         <div
-            name='About'
+            id='song'
             className='md:w-full md:h-screen bg-gradient-to-b from-black to-gray-800 text-white font-Montserrat'
         >
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
